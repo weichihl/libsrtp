@@ -19,7 +19,10 @@
 /* #undef OPENSSL */
 
 /* Define this to use AES-GCM. */
-/* #undef GCM */
+#define GCM 1
+
+/* Define this to use MBEDTLS. */
+#define MBEDTLS 1
 
 /* Define if building for a CISC machine (e.g. Intel). */
 /* #undef CPU_CISC */
