@@ -59,7 +59,7 @@
 #elif defined HAVE_WINSOCK2_H
 #include <winsock2.h>
 #else
-#ifdef KVS_PLAT_ESP_FREERTOS
+#if defined(KVS_PLAT_ESP_FREERTOS) || defined(KVS_PLAT_RTK_FREERTOS)
 #include <lwip/def.h>
 #else
 #error "Platform not recognized"
